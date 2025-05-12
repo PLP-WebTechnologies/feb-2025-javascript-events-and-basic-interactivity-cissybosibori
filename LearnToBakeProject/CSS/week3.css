@@ -1,0 +1,151 @@
+
+/* General Page Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffcc99;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #ff9966;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ff9966;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 3px solid #ff9966;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff9966;
+    color: white;
+}
+
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff9966;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6600;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff9966;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+video, img {
+    max-width: 100%;
+    height: auto;
+}
+#gallery img {
+    transition: opacity 0.5s ease-in-out;
+}
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #ffd9b3;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tab-btn.active {
+    background-color: #ff9966;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    background: #fff8f0;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+

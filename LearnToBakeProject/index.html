@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to bake with our video tutorials and guides.">
+    <title>Learn to Bake</title>
+    <link rel="stylesheet" href="CSS/week3.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Learn to Bake</h1>
+        <p>Your go-to website for baking tutorials and guides.</p>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+            <h2>Start Your Baking Journey</h2>
+            <p>Discover step-by-step baking tutorials and delicious recipes.</p>
+            <img src="https://images.pexels.com/photos/8820570/pexels-photo-8820570.jpeg" alt="Baking Essentials" width="600">
+        </section>
+        
+        <!-- Video Tutorials Section -->
+        <section id="tutorials">
+            <h2>Baking Video Tutorials</h2>
+            <p>Watch our easy-to-follow baking tutorials:</p>
+            <video controls width="600">
+                <source src="media/bakingvideo.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+        
+        <!-- Recipes Section -->
+        <!-- Tabbed Recipe Section -->
+<section id="recipes-tabs">
+    <h2>Explore Our Recipes</h2>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="chocolate">🍫 Chocolate Cake</button>
+        <button class="tab-btn" data-tab="vanilla">🍰 Vanilla Cupcakes</button>
+        <button class="tab-btn" data-tab="bread">🍞 Homemade Bread</button>
+    </div>
+
+    <div class="tab-content active" id="chocolate">
+        <p>This rich chocolate cake is layered with smooth ganache and topped with fresh berries.</p>
+    </div>
+    <div class="tab-content" id="vanilla">
+        <p>Light and fluffy vanilla cupcakes perfect for any celebration!</p>
+    </div>
+    <div class="tab-content" id="bread">
+        <p>Our no-knead bread recipe is perfect for beginners and pros alike.</p>
+    </div>
+</section>
+
+        
+        <!-- Contact List -->
+        <section id="contacts">
+            <h2>Contact List</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Milly Bobby</td>
+                    <td>123 Baker St</td>
+                    <td>+2544567890</td>
+                    <td>millybobby@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jake Bongiovi</td>
+                    <td>456 Pastry Ave</td>
+                    <td>+2547654321</td>
+                    <td>jakebongiovi@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sadie Sink</td>
+                    <td>789 Cake Ln</td>
+                    <td>+2542334455</td>
+                    <td>sadiesink@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Finn Wolfhard</td>
+                    <td>101 Dessert Rd</td>
+                    <td>+2547889900</td>
+                    <td>finnwolfhard@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Noah Schnapp</td>
+                    <td>202 Muffin Dr</td>
+                    <td>+2546778899</td>
+                    <td>noahschnapp@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Join Our Baking Community</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+                <br>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                
+                <label for="experience">Baking Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select your level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <br>
+                
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required> Male
+                <input type="radio" id="female" name="gender" value="female" required> Female
+                <br>
+                
+                <label for="preferences">Baking Interests:</label>
+                <input type="checkbox" id="cakes" name="preferences" value="cakes"> Cakes
+                <input type="checkbox" id="bread" name="preferences" value="bread"> Bread
+                <input type="checkbox" id="cookies" name="preferences" value="cookies"> Cookies
+                <br>
+                
+                <label for="terms">Agree to Terms:</label>
+                <input type="checkbox" id="terms" name="terms" required> I agree
+                <br>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at: <a href="mailto:info@learntobake.com">info@learntobake.com</a></p>
+    </footer>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
